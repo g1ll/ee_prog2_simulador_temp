@@ -23,7 +23,7 @@ int main() {
 
 //	escreve.open(filePath,fstream::in | fstream::out | fstream::app);
 	escreve.open(filePath,fstream::out);
-	cout << "Trabalho Temperatura VSCode";
+	cout << "Trabalho Temperatura VSCode"<<endl;
 	if(escreve){
 		t.inicializa(); // Inicializa a simulacao
 			cout << t.enviarComando(RES_ON) << endl; // Aciona o resistor
