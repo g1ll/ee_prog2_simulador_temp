@@ -1,4 +1,6 @@
-## Projeto do Trabalho de Simulador de Temperatura para VSCode
+## Projeto para o Controle do Simulador de Temperatura
+
+Este projeto pode ser aberto com o VSCode (Recomendado) ou qualquer outro editor de código, para compilar é preciso acesso ao prompt de comandos (CMD ou PowerShell).
 
 Para este projeto compilar é preciso que a pasta do MinGW esteja na variável de ambiente do Windows.
 
