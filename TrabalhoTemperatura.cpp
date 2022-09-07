@@ -26,11 +26,11 @@ int main() {
 	cout << "Trabalho Temperatura VSCode"<<endl;
 	if(escreve){
 		t.inicializa(); // Inicializa a simulacao
-			cout << t.enviarComando(RES_ON) << endl; // Aciona o resistor
+			cout << t.enviarComando(RES_OFF) << endl; // Aciona o resistor
 			for (int i = 0; i < 50; ++i) {
 				temp = t.lerTemp();
-				cout << temp <<'\t'<<"RES_ON"<< endl; // Ler a temperaturda
-				line = "\""+to_string(temp)+"\";\""+"RES_ON"+"\"";
+				cout << temp <<'\t'<<"RES_OFF"<< endl; // Ler a temperaturda
+				line = "\""+to_string(temp)+"\";\""+"RES_OFF"+"\"";
 				line = line.replace(line.find('.'),1,1,',');//substituicao de . por , melhor visualizaco em excel pt-br
 				escreve << line << endl;
 				Sleep(50);
