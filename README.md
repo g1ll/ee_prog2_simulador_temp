@@ -16,7 +16,13 @@ O *script* apenas chama o **g++.exe**  e compila o executável no diretório **.
 
 Copie as DLLs do simulador para a pasta bin.
 
-É necessário que exista a pasta **logs** no diretório de execução do programa, para salvar o arquivo de exemplo. Pode ser na raiz ou na pasta bin, depende de onde for executar o programa.
+É necessário que exista a pasta **logs** no diretório de execução do programa, pasta usada para salvar o arquivo csv de exemplo. Pode ser na raiz do projeto ou na pasta bin, depende de onde o programa for executado.
+
+Para executar o programa  compilado rode o seguinte comando:
+
+```powershell
+.\bin\trabalho.exe
+```
 
 Caso não consiga instalar o MingGW e baixar os pocates do compilador manualmente, uma alternativa é instalar diretamente o Dev-Cpp e adicionar na variável de ambiente do windows o MinGW do diretório do Dev-Cpp (C:/Program Files/Dev-Cpp/MinGW/bin).
 
