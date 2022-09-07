@@ -6,6 +6,8 @@ Para este projeto compilar é preciso que a pasta do MinGW esteja na variável d
 
 Antes de compilar crie a pasta bin na raiz do projeto.
 
+Copie as DLLs do simulador para a pasta bin.
+
 Para compilar rode o arquivo **build.bat** no terminal e na raiz do projeto.
 
 ```powershell
@@ -14,17 +16,15 @@ Para compilar rode o arquivo **build.bat** no terminal e na raiz do projeto.
 
 O *script* apenas chama o **g++.exe**  e compila o executável no diretório **./bin/trabalho.exe**.
 
-Copie as DLLs do simulador para a pasta bin.
+Antes de executar o programa é necessário criar a pasta **logs** no diretório de execução, pasta usada para salvar o arquivo csv de exemplo. Pode ser na raiz do projeto ou na pasta bin, depende de onde o programa for executado.
 
-É necessário que exista a pasta **logs** no diretório de execução do programa, pasta usada para salvar o arquivo csv de exemplo. Pode ser na raiz do projeto ou na pasta bin, depende de onde o programa for executado.
-
-Para executar o programa  compilado rode o seguinte comando:
+Para executar o programa compilado rode o seguinte comando no terminal:
 
 ```powershell
 .\bin\trabalho.exe
 ```
 
-Caso não consiga instalar o MingGW e baixar os pocates do compilador manualmente, uma alternativa é instalar diretamente o Dev-Cpp e adicionar na variável de ambiente do windows o MinGW do diretório do Dev-Cpp (C:/Program Files/Dev-Cpp/MinGW/bin).
+Caso não consiga instalar o MingGW e baixar os pocates do compilador manualmente, uma alternativa é instalar diretamente o Dev-Cpp e adicionar na variável de ambiente do windows o MinGW do diretório de instalação do Dev-Cpp (C:/Program Files/Dev-Cpp/MinGW/bin).
 
 Link para download do vscode: [https://code.visualstudio.com/docs/?dv=win64user](https://code.visualstudio.com/docs/?dv=win64user). 
 
