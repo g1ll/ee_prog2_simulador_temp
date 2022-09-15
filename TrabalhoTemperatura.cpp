@@ -12,14 +12,19 @@ int main() {
 	Temperatura t; //Cria um objeto t da classe Temperatura
 	fstream escreve; //
 	string line;
-	string filePath = ".\\logs\\new-log.csv"; //Neste caso a pasta log deverá existir
+	string filePath; //Neste caso a pasta log deverá existir
+	string dataString;
 	double temp;
 
 	//Data e hora local
 	time_t data = time(nullptr);
 	char mbstr[100]; //string para receber data e hora formatada
 
-	strftime(mbstr,sizeof(mbstr),"%A %c", localtime(&data));//https://en.cppreference.com/w/cpp/chrono/c/strftime
+	strftime(mbstr,sizeof(mbstr),"%Y%m%d", localtime(&data));//https://en.cppreference.com/w/cpp/chrono/c/strftime
+
+	dataString.assign(mbstr);
+
+	filePath  = ".\\logs\\"+dataString+"_new-log.csv";
 
 //	escreve.open(filePath,fstream::in | fstream::out | fstream::app);
 	escreve.open(filePath,fstream::out);
